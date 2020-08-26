@@ -1,16 +1,20 @@
-# photo_mania
+# Photo Mania
 
-A new Flutter application.
+A Flutter application where you can search any type of image and download it if you like.
 
-## Getting Started
+Features/API used in application 
 
-This project is a starting point for a Flutter application.
+* Usplash API for searching images.
+* Providers
+* Image_Downloader
+* StaggeredGridView 
 
-A few resources to get you started if this is your first Flutter project:
+# Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<p float="left">
+<img src="https://user-images.githubusercontent.com/31320274/91321400-310d5480-e7dc-11ea-8987-68bf3db7c9d8.png" width="250">
+  &emsp;&emsp;&emsp;
+<img src="https://user-images.githubusercontent.com/31320274/91321406-32d71800-e7dc-11ea-96b2-a96469e16245.png" width="250">
+<br>
+</p>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
