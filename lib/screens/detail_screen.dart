@@ -46,13 +46,16 @@ class _DetailScreenState extends State<DetailScreen> {
           width: double.infinity,
           child: Stack(
             children: <Widget>[
-              Container(
-                width: double.infinity,
-                height: height * 0.53,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(photoData.imageUrl),
-                    fit: BoxFit.cover,
+              Hero(
+                tag: photoData.imageUrl,
+                child: Container(
+                  width: double.infinity,
+                  height: height * 0.53,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(photoData.imageUrl),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
@@ -61,10 +64,12 @@ class _DetailScreenState extends State<DetailScreen> {
                 top: 10,
                 child: CircleAvatar(
                   backgroundColor: Colors.black12,
-                  child: Icon(
-                    Icons.arrow_back_ios,
+                  child: IconButton(
+                    icon: Icon(Icons.arrow_back_ios, size: 15,),
                     color: Colors.white,
-                    size: 15,
+                    onPressed: (){
+                      Navigator.of(context).pop();
+                    },
                   ),
                 ),
               ),

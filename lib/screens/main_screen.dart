@@ -18,9 +18,8 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
-
     return Scaffold(
-      backgroundColor: Color.fromRGBO(214, 213, 210, 5),
+      backgroundColor: Color.fromRGBO(227, 227, 227, 1),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -29,7 +28,7 @@ class _MainScreenState extends State<MainScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                SearchBox(height * 0.06),
+                SearchBox(height * 0.065),
                 SizedBox(
                   height: 2,
                 ),

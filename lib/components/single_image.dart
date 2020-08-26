@@ -13,12 +13,15 @@ class SingleImage extends StatelessWidget {
       onTap: () {
         Navigator.of(context).pushNamed(DetailScreen.routeName, arguments: photo);
       },
-      child: Container(
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
-            image: DecorationImage(
-                image: NetworkImage(photo.imageUrl),
-                fit: BoxFit.cover)),
+      child: Hero(
+        tag: photo.imageUrl,
+        child: Container(
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              image: DecorationImage(
+                  image: NetworkImage(photo.imageUrl),
+                  fit: BoxFit.cover)),
+        ),
       ),
     );
   }

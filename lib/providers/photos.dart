@@ -31,13 +31,12 @@ class Photos with ChangeNotifier {
             description: photos[i]['alt_description'],
             userName: photos[i]['user']['username'],
             profileImage: photos[i]['user']['profile_image']['large']));
-        Scaffold.of(context).showSnackBar(SnackBar(content: Text('test')));
         print('Test: ${photos[i]['user']['profile_image']['large']}');
       }
       notifyListeners();
     } catch (error) {
       Scaffold.of(context).showSnackBar(SnackBar(
-        content: Text('Error $error'),
+        content: Text('Something Wrong happened'),
       ));
     }
   }

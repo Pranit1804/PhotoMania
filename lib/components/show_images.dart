@@ -33,8 +33,10 @@ class _ShowImagesState extends State<ShowImages> {
                 crossAxisSpacing: 20.0,
               ),
             )
-          : Center(
-              child: Text('Search images to see here'),
+          : Container(
+              margin: EdgeInsets.all(15),
+              alignment: Alignment.center,
+              child: Text('Search images to see here', style: TextStyle(fontSize: 15, color: Colors.black54, fontWeight: FontWeight.bold),),
             ),
     );
   }
