@@ -4,11 +4,12 @@ import 'dart:convert';
 
 class Photo {
   final imageUrl;
+  final qualityImageUrl;
   final description;
   final userName;
   final profileImage;
 
-  Photo({this.imageUrl, this.description, this.userName, this.profileImage});
+  Photo({this.qualityImageUrl, this.imageUrl, this.description, this.userName, this.profileImage});
 }
 
 class Photos with ChangeNotifier {
@@ -27,6 +28,7 @@ class Photos with ChangeNotifier {
       final photos = data['results'];
       for (int i = 0; i < photos.length; i++) {
         _photoDetails.add(Photo(
+          qualityImageUrl: photos[i]['urls']['full'],
             imageUrl: photos[i]['urls']['small'],
             description: photos[i]['alt_description'],
             userName: photos[i]['user']['username'],

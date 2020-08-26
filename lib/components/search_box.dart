@@ -30,7 +30,8 @@ class _SearchBoxState extends State<SearchBox> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Expanded(
-              child: Center(
+              child: Align(
+                alignment: Alignment.center,
                 child: TextField(
                   controller: _controller,
                   cursorColor: Colors.black,

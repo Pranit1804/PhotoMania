@@ -50,10 +50,10 @@ class _DetailScreenState extends State<DetailScreen> {
                 tag: photoData.imageUrl,
                 child: Container(
                   width: double.infinity,
-                  height: height * 0.53,
+                  height: height * 0.58,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage(photoData.imageUrl),
+                      image: NetworkImage(photoData.qualityImageUrl),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -77,11 +77,11 @@ class _DetailScreenState extends State<DetailScreen> {
                 alignment: Alignment.bottomCenter,
                 child: Container(
                   width: double.infinity,
-                  height: height * 0.465,
+                  height: height * 0.425,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
                     ),
                     color: Colors.white,
                   ),
